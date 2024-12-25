@@ -1,0 +1,131 @@
+.quiz {
+    width: 100vw;
+    height: calc(100vh - 25px);
+    background-color: #141827;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz_page_section {
+    width: 1130px;
+    height: calc(100% - 40px);
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #121422;
+    border-radius: 16px;
+    /* Espace interne autour des éléments */
+    box-sizing: border-box; /* Inclure le padding dans la largeur et hauteur */
+    overflow-y: auto; /* Permet uniquement le scroll vertical */
+    overflow-x: hidden;
+    position: relative;
+}
+
+.quiz_page_box {
+    width: 100%;
+    height: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quiz_page_h1 {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+
+.quiz_page_current_question {
+    text-decoration: underline;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+.quiz_page_current_question_span {
+    color: #8DB5E6;
+}
+
+.quiz_page_box_question-image {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.quiz_page_box-question_label {
+    color: white;
+}
+
+.quiz_page_box-question_input {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 20px;
+}
+
+.quiz_page_box-image {
+    width: 400px;
+    height: 300px;
+}
+
+.image-fit {
+    width: 100%;
+    height: 100%; /* Assure que le conteneur prend toute la hauteur */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    object-fit: contain; /* Assure que l'image couvre tout sans distorsion */
+    display: block;
+}
+
+.quiz_page_result {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.quiz_page_result_button {
+    padding: 10px 25px 10px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.quiz_page_box_feedback {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.quiz_page_button_home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    background-color: white;
+    top: 28px;
+    left: 50px;
+    border-radius: 50px;
+    color: #121422;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}

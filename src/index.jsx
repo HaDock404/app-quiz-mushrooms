@@ -5,15 +5,24 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import reportWebVitals from './reportWebVitals';
+import './styles/normalize.css'
+import GlobalStyle from './styles/createGlobalStyle.jsx'
+import ScrollToTop from "./styles/ScrollToTop";
+import HomePage from './pages/HomePage.jsx';
+import Quiz from './pages/Quiz.jsx';
+import RandomQuiz from './pages/RandomQuiz.jsx';
 
-import App from './pages/App';
+import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <HashRouter>
+    <GlobalStyle/>
+    <ScrollToTop />
         <Routes>
-          <Route path="/" element={<App />}/>
+          <Route path="/" element={<HomePage />}/>
+          <Route path="/quiz" element={<Quiz />}/>
+          <Route path="/random-quiz" element={<RandomQuiz />}/>
         </Routes>
     <React.StrictMode></React.StrictMode>
   </HashRouter>,

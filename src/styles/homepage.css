@@ -1,0 +1,116 @@
+.homepage {
+    width: 100vw;
+    height: calc(100vh - 25px);
+    background-color: #141827;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.body_homepage_section {
+    width: 1130px;
+    height: calc(100% - 25px);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 25px;
+    background-color: #121422;
+    border-radius: 16px;
+    padding: 20px; /* Espace interne autour des éléments */
+    padding-top: 80px;
+    box-sizing: border-box; /* Inclure le padding dans la largeur et hauteur */
+    display: grid; /* Utilisation de CSS Grid */
+    grid-column-gap: 10px;
+	grid-row-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow-y: auto; /* Permet uniquement le scroll vertical */
+    overflow-x: hidden;
+    position: relative;
+}
+
+.body_homepage_article_header {
+    width: 1090px;
+    height: 40px;
+    position: fixed;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-top: 30px;
+    z-index: 10;
+}
+
+.body_homepage_article_header_title {
+    background-color: #121422;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+
+.quiz_card_article {
+    width: 350px;
+    height: 200px;
+    background-color: #0D0F1D;
+    border-radius: 16px;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+}
+
+.quiz_card_article:hover {
+    background-color: #0b0c19;
+}
+.quiz_card_article:hover .quiz_card_title {
+    text-decoration: underline;
+}
+
+.quiz_card_title {
+    font-weight: 600;
+    color: white;
+    margin: 20px;
+    font-size: 16px;
+}
+
+.quiz_card_text {
+    font-weight: 500;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+.quiz_card_tag_difficulty {
+    width: 50px;
+    height: 20px;
+    background-color: #C7888C;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #0D0F1D;
+    font-size: 11px;
+}
+
+.quiz_card_tag_order {
+    width: 60px;
+    height: 20px;
+    background-color: #8DB5E6;
+    position: absolute;
+    bottom: 20px;
+    left: 80px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #0D0F1D;
+    font-size: 11px;
+}
