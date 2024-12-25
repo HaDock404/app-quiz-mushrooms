@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/app-quiz-mushrooms/static/js/main.cef17fdf.js",
+    "static/js/488.bd4ea12e.chunk.js": "/app-quiz-mushrooms/static/js/488.bd4ea12e.chunk.js",
+    "index.html": "/app-quiz-mushrooms/index.html",
+    "main.cef17fdf.js.map": "/app-quiz-mushrooms/static/js/main.cef17fdf.js.map",
+    "488.bd4ea12e.chunk.js.map": "/app-quiz-mushrooms/static/js/488.bd4ea12e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.cef17fdf.js"
+  ]
+}
