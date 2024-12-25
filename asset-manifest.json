@@ -1,12 +1,43 @@
 {
   "files": {
-    "main.js": "/app-quiz-mushrooms/static/js/main.cef17fdf.js",
+    "main.css": "/app-quiz-mushrooms/static/css/main.924e0bbb.css",
+    "main.js": "/app-quiz-mushrooms/static/js/main.8de94e1e.js",
+    "static/js/896.f2f20507.chunk.js": "/app-quiz-mushrooms/static/js/896.f2f20507.chunk.js",
+    "static/js/835.3f653aff.chunk.js": "/app-quiz-mushrooms/static/js/835.3f653aff.chunk.js",
     "static/js/488.bd4ea12e.chunk.js": "/app-quiz-mushrooms/static/js/488.bd4ea12e.chunk.js",
+    "static/media/quiz_11.png": "/app-quiz-mushrooms/static/media/quiz_11.329e406e2805e755219d.png",
+    "static/media/quiz_07.png": "/app-quiz-mushrooms/static/media/quiz_07.39e4996cbb8c7c2a8230.png",
+    "static/media/quiz_09.png": "/app-quiz-mushrooms/static/media/quiz_09.24f3ec860192585235af.png",
+    "static/media/quiz_06.png": "/app-quiz-mushrooms/static/media/quiz_06.68cba3b13ded29be11a6.png",
+    "static/media/quiz_01.png": "/app-quiz-mushrooms/static/media/quiz_01.7c631d212c55ba53f978.png",
+    "static/media/quiz_22.png": "/app-quiz-mushrooms/static/media/quiz_22.110ad2dbd772caec8987.png",
+    "static/media/quiz_12.png": "/app-quiz-mushrooms/static/media/quiz_12.2261c0763d0ffc53b766.png",
+    "static/media/quiz_23.png": "/app-quiz-mushrooms/static/media/quiz_23.08f343e8aff1d6c99777.png",
+    "static/media/quiz_10.png": "/app-quiz-mushrooms/static/media/quiz_10.dbfd0e1c5933d963e7b5.png",
+    "static/media/quiz_02.png": "/app-quiz-mushrooms/static/media/quiz_02.3338236c4574f1e3f6de.png",
+    "static/media/quiz_13.png": "/app-quiz-mushrooms/static/media/quiz_13.bc8abba7f139fdf5ee63.png",
+    "static/media/quiz_08.png": "/app-quiz-mushrooms/static/media/quiz_08.fbac64bc5d98cf2f27e4.png",
+    "static/media/quiz_15.png": "/app-quiz-mushrooms/static/media/quiz_15.80d7953248b47a8ebd77.png",
+    "static/media/quiz_03.png": "/app-quiz-mushrooms/static/media/quiz_03.ad5e056b4d339df6709a.png",
+    "static/media/quiz_21.png": "/app-quiz-mushrooms/static/media/quiz_21.82487a0936febf58644b.png",
+    "static/media/quiz_26.png": "/app-quiz-mushrooms/static/media/quiz_26.03fc44aa8bcd306d9984.png",
+    "static/media/quiz_16.png": "/app-quiz-mushrooms/static/media/quiz_16.61da4f959a04641b7594.png",
+    "static/media/quiz_20.png": "/app-quiz-mushrooms/static/media/quiz_20.8c98cc7ecd10904a8a83.png",
+    "static/media/quiz_04.png": "/app-quiz-mushrooms/static/media/quiz_04.a07205d35bf2ebc66389.png",
+    "static/media/quiz_17.png": "/app-quiz-mushrooms/static/media/quiz_17.b1286770c1fc294faa8e.png",
+    "static/media/quiz_25.png": "/app-quiz-mushrooms/static/media/quiz_25.17481c602d4273a8a18d.png",
+    "static/media/quiz_05.png": "/app-quiz-mushrooms/static/media/quiz_05.73756ee245b4a9bd0657.png",
+    "static/media/quiz_19.png": "/app-quiz-mushrooms/static/media/quiz_19.78a337747a84f656f63f.png",
+    "static/media/quiz_18.png": "/app-quiz-mushrooms/static/media/quiz_18.66755313623f5d6ed138.png",
+    "static/media/quiz_14.png": "/app-quiz-mushrooms/static/media/quiz_14.e1eb3ffab02c863351a0.png",
+    "static/media/quiz_24.png": "/app-quiz-mushrooms/static/media/quiz_24.d529ffbe6e25a2782365.png",
     "index.html": "/app-quiz-mushrooms/index.html",
-    "main.cef17fdf.js.map": "/app-quiz-mushrooms/static/js/main.cef17fdf.js.map",
+    "main.924e0bbb.css.map": "/app-quiz-mushrooms/static/css/main.924e0bbb.css.map",
+    "main.8de94e1e.js.map": "/app-quiz-mushrooms/static/js/main.8de94e1e.js.map",
     "488.bd4ea12e.chunk.js.map": "/app-quiz-mushrooms/static/js/488.bd4ea12e.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.cef17fdf.js"
+    "static/css/main.924e0bbb.css",
+    "static/js/main.8de94e1e.js"
   ]
 }

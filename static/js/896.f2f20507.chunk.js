@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkapp_quiz_mushrooms=self.webpackChunkapp_quiz_mushrooms||[]).push([[896],{515:e=>{e.exports=JSON.parse('[{"image":".png","scientific_name":"","common_name":"","edible":"","syndrome":""}]')}}]);
