@@ -25,19 +25,19 @@ function BodyRandomQuizPage() {
 
     const [currentQuestion, setCurrentQuestion] = useState(0);
 
-    const [orderInput, setOrderInput] = useState("");
-    const [familyInput, setFamilyInput] = useState("");
     const [scientificInput, setScientificInput] = useState("");
     const [nameInput, setNameInput] = useState("");
-
-    const [orderInputState, setOrderInputState] = useState("");
-    const [orderAnswer, setOrderAnswer] = useState("");
-    const [familyInputState, setFamilyInputState] = useState("");
-    const [familyAnswer, setFamilyAnswer] = useState("");
+    const [edibleInput, setEdibleInput] = useState("")
+    const [syndromeInput, setSyndromeInput] = useState("")
+    
     const [scientificInputState, setScientificInputState] = useState("");
     const [scientificAnswer, setScientificAnswer] = useState("");
     const [nameInputState, setNameInputState] = useState("");
     const [nameAnswer, setNameAnswer] = useState("");
+    const [edibleInputState, setEdibleInputState] = useState("")
+    const [edibleAnswer, setEdibleAnswer] = useState("")
+    const [syndromeInputState, setSyndromeInputState] = useState("")
+    const [syndromeAnswer, setSyndromeAnswer] = useState("")
 
     const [score, setScore] = useState(0);
     const [alreadyClicked, setAlreadyClicked] =  useState(0);
@@ -51,22 +51,6 @@ function BodyRandomQuizPage() {
             return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
         }
 
-        if (removeAccents(orderInput.trim().toLowerCase()) === removeAccents(currentData.order.toLowerCase())) {
-            currentScore = currentScore + 0.5
-            setOrderInputState("")
-            setOrderAnswer("")
-        } else {
-            setOrderInputState(orderInput.toLowerCase())
-            setOrderAnswer(currentData.order.toLowerCase())
-        }
-        if (removeAccents(familyInput.trim().toLowerCase()) === removeAccents(currentData.family.toLowerCase())) {
-            currentScore = currentScore + 0.5
-            setFamilyInputState("")
-            setFamilyAnswer("")
-        } else {
-            setFamilyInputState(familyInput.toLowerCase())
-            setFamilyAnswer(currentData.family.toLowerCase())
-        }
         if (removeAccents(scientificInput.trim().toLowerCase()) === removeAccents(currentData.scientific_name.toLowerCase())) {
             currentScore = currentScore + 0.5
             setScientificInputState("")
@@ -82,6 +66,22 @@ function BodyRandomQuizPage() {
         } else {
             setNameInputState(nameInput.toLowerCase())
             setNameAnswer(currentData.common_name.toLowerCase())
+        }
+        if (removeAccents(edibleInput.trim().toLowerCase()) === removeAccents(currentData.edible.toLowerCase())) {
+            currentScore = currentScore + 0.5
+            setEdibleInputState("")
+            setEdibleAnswer("")
+        } else {
+            setEdibleInputState(edibleInput.toLowerCase())
+            setEdibleAnswer(currentData.edible.toLowerCase())
+        }
+        if (removeAccents(syndromeInput.trim().toLowerCase()) === removeAccents(currentData.syndrome.toLowerCase())) {
+            currentScore = currentScore + 0.5
+            setSyndromeInputState("")
+            setSyndromeAnswer("")
+        } else {
+            setSyndromeInputState(syndromeInput.toLowerCase())
+            setSyndromeAnswer(currentData.syndrome.toLowerCase())
         }
     
         if (alreadyClicked === 0) {
@@ -107,18 +107,18 @@ function BodyRandomQuizPage() {
     
     const handleNextQuestion = () => {
         setFeedback("");
-        setOrderInput("");
-        setFamilyInput("");
         setScientificInput("");
-        setNameInput("");
-        setOrderInputState("");
-        setOrderAnswer("");
-        setFamilyInputState("")
-        setFamilyAnswer("")
         setScientificInputState("")
         setScientificAnswer("")
+        setNameInput("");
         setNameInputState("")
         setNameAnswer("")
+        setEdibleInput("");
+        setEdibleInputState("")
+        setEdibleAnswer("")
+        setSyndromeInput("");
+        setSyndromeInputState("")
+        setSyndromeAnswer("")
         setAlreadyClicked(0)
 
         if (currentQuestion < shuffledData.length - 1) {
@@ -145,30 +145,6 @@ function BodyRandomQuizPage() {
                     <div className="quiz_page_box-question">
                         <div>
                             <label className="quiz_page_box-question_label">
-                                ORDEN :
-                                <input
-                                    className="quiz_page_box-question_input"
-                                    type="text"
-                                    value={orderInput}
-                                    onChange={(e) => setOrderInput(e.target.value)}
-                                    style={{ margin: "10px" }}
-                                />
-                            </label>
-                        </div>
-                        <div>
-                            <label className="quiz_page_box-question_label">
-                                FAMILIA :
-                                <input
-                                    className="quiz_page_box-question_input"
-                                    type="text"
-                                    value={familyInput}
-                                    onChange={(e) => setFamilyInput(e.target.value)}
-                                    style={{ margin: "10px" }}
-                                />
-                            </label>
-                        </div>
-                        <div>
-                            <label className="quiz_page_box-question_label">
                                 NOMBRE CIENTIFICO :
                                 <input
                                     className="quiz_page_box-question_input"
@@ -191,21 +167,90 @@ function BodyRandomQuizPage() {
                                 />
                             </label>
                         </div>
-                        <p className="quiz_page_box_feedback">{feedback}</p>
+                        <div style={{display:"flex", flexDirection:"row", alignItems:"center"}}>
+                            <label className="quiz_page_box-question_label">
+                                COMESTIBLE :
+                            </label>
+                            <div style={{ margin: "10px" }}>
+                                <label style={{ marginRight: "10px", display: "inline-flex", alignItems: "center" }}>
+                                    <input
+                                        type="radio"
+                                        name="edible"
+                                        value="si"
+                                        onChange={(e) => setEdibleInput(e.target.value)}
+                                        style={{
+                                            appearance: "none",
+                                            width: "20px",
+                                            height: "20px",
+                                            borderRadius: "50%",
+                                            border: "2px solid #000",
+                                            marginRight: "5px",
+                                            outline: "none",
+                                            cursor: "pointer",
+                                            backgroundColor: edibleInput === "si" ? "#007BFF" : "transparent"
+                                        }}
+                                        onFocus={(e) => (e.target.style.boxShadow = "0 0 5px #007BFF")}
+                                        onBlur={(e) => (e.target.style.boxShadow = "none")}
+                                        onClick={(e) => (e.target.style.backgroundColor = "#007BFF")}
+                                    />
+                                    Si
+                                </label>
+                                <label style={{ marginRight: "10px", display: "inline-flex", alignItems: "center" }}>
+                                    <input
+                                        type="radio"
+                                        name="edible"
+                                        value="no"
+                                        onChange={(e) => setEdibleInput(e.target.value)}
+                                        style={{
+                                            appearance: "none",
+                                            width: "20px",
+                                            height: "20px",
+                                            borderRadius: "50%",
+                                            border: "2px solid #000",
+                                            marginRight: "5px",
+                                            outline: "none",
+                                            cursor: "pointer",
+                                            backgroundColor: edibleInput === "no" ? "#007BFF" : "transparent"
+                                        }}
+                                        onFocus={(e) => (e.target.style.boxShadow = "0 0 5px #007BFF")}
+                                        onBlur={(e) => (e.target.style.boxShadow = "none")}
+                                        onClick={(e) => (e.target.style.backgroundColor = "#007BFF")}
+                                    />
+                                    No
+                                </label>
+                            </div>
+                        </div>
 
-                        <div style={{color:'white'}}>Answer 
-                            <span style={{color:'red'}}> {orderInputState}</span> : {orderAnswer}
+                        <div>
+                            <label className="quiz_page_box-question_label">
+                                SINDROME :
+                                <input
+                                    className="quiz_page_box-question_input"
+                                    type="text"
+                                    value={syndromeInput}
+                                    onChange={(e) => setSyndromeInput(e.target.value)}
+                                    style={{ 
+                                        margin: "10px", 
+                                        backgroundColor: edibleInput === 'si' ? '#121422' : 'black',
+                                        pointerEvents: edibleInput === 'si' ? 'none' : 'auto',
+                                    }}
+                                    readOnly={edibleInput === 'si'}
+                                />
+                            </label>
                         </div>
-                        <div style={{color:'white'}}>Answer 
-                            <span style={{color:'red'}}> {familyInputState}</span> : {familyAnswer}
-                        </div>
+                        <p className="quiz_page_box_feedback">{feedback}</p>
                         <div style={{color:'white'}}>Answer 
                             <span style={{color:'red'}}> {scientificInputState}</span> : {scientificAnswer}
                         </div>
                         <div style={{color:'white'}}>Answer 
                             <span style={{color:'red'}}> {nameInputState}</span> : {nameAnswer}
                         </div>
-
+                        <div style={{color:'white'}}>Answer 
+                            <span style={{color:'red'}}> {edibleInputState}</span> : {edibleAnswer}
+                        </div>
+                        <div style={{color:'white'}}>Answer 
+                            <span style={{color:'red'}}> {syndromeInputState}</span> : {syndromeAnswer}
+                        </div>
                     </div>
                     <div className="quiz_page_box-image">
                     {imagePath ? (

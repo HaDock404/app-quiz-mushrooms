@@ -24,7 +24,7 @@ function BodyQuizPage() {
     const [scientificInput, setScientificInput] = useState("");
     const [nameInput, setNameInput] = useState("");
     const [edibleInput, setEdibleInput] = useState("")
-    const [syndromeInput, setSyndromeInput] = useState("")//
+    const [syndromeInput, setSyndromeInput] = useState("")
 
     const [scientificInputState, setScientificInputState] = useState("");
     const [scientificAnswer, setScientificAnswer] = useState("");
@@ -233,7 +233,6 @@ function BodyQuizPage() {
                             </label>
                         </div>
                         <p className="quiz_page_box_feedback">{feedback}</p>
-
                         <div style={{color:'white'}}>Answer 
                             <span style={{color:'red'}}> {scientificInputState}</span> : {scientificAnswer}
                         </div>
@@ -246,7 +245,6 @@ function BodyQuizPage() {
                         <div style={{color:'white'}}>Answer 
                             <span style={{color:'red'}}> {syndromeInputState}</span> : {syndromeAnswer}
                         </div>
-
                     </div>
                     <div className="quiz_page_box-image">
                         {currentData?.image ? (
