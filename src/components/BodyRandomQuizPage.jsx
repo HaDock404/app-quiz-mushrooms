@@ -183,7 +183,7 @@ function BodyRandomQuizPage() {
                                             width: "20px",
                                             height: "20px",
                                             borderRadius: "50%",
-                                            border: "2px solid #000",
+                                            border: "2px solid #ffff",
                                             marginRight: "5px",
                                             outline: "none",
                                             cursor: "pointer",
@@ -193,7 +193,7 @@ function BodyRandomQuizPage() {
                                         onBlur={(e) => (e.target.style.boxShadow = "none")}
                                         onClick={(e) => (e.target.style.backgroundColor = "#007BFF")}
                                     />
-                                    Si
+                                    <span style={{color:"white"}}>Si</span>
                                 </label>
                                 <label style={{ marginRight: "10px", display: "inline-flex", alignItems: "center" }}>
                                     <input
@@ -206,7 +206,7 @@ function BodyRandomQuizPage() {
                                             width: "20px",
                                             height: "20px",
                                             borderRadius: "50%",
-                                            border: "2px solid #000",
+                                            border: "2px solid #ffff",
                                             marginRight: "5px",
                                             outline: "none",
                                             cursor: "pointer",
@@ -216,7 +216,7 @@ function BodyRandomQuizPage() {
                                         onBlur={(e) => (e.target.style.boxShadow = "none")}
                                         onClick={(e) => (e.target.style.backgroundColor = "#007BFF")}
                                     />
-                                    No
+                                    <span style={{color:"white"}}>No</span>
                                 </label>
                             </div>
                         </div>
