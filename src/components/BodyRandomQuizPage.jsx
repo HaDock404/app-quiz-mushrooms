@@ -174,6 +174,7 @@ function BodyRandomQuizPage() {
                             <div style={{ margin: "10px" }}>
                                 <label style={{ marginRight: "10px", display: "inline-flex", alignItems: "center" }}>
                                     <input
+                                        key={currentQuestion}
                                         type="radio"
                                         name="edible"
                                         value="si"
@@ -197,6 +198,7 @@ function BodyRandomQuizPage() {
                                 </label>
                                 <label style={{ marginRight: "10px", display: "inline-flex", alignItems: "center" }}>
                                     <input
+                                        key={currentQuestion}
                                         type="radio"
                                         name="edible"
                                         value="no"
