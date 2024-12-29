@@ -224,15 +224,14 @@ function BodyRandomQuizPage() {
                         </div>
 
                         <div>
-                            <label className="quiz_page_box-question_label">
+                            <label className="quiz_page_box-question_label textarea">
                                 SINDROME :
-                                <input
-                                    className="quiz_page_box-question_input"
+                                <textarea
+                                    className="quiz_page_box-question_textarea"
                                     type="text"
                                     value={syndromeInput}
                                     onChange={(e) => setSyndromeInput(e.target.value)}
                                     style={{ 
-                                        margin: "10px", 
                                         backgroundColor: edibleInput === 'si' ? '#121422' : 'black',
                                         pointerEvents: edibleInput === 'si' ? 'none' : 'auto',
                                     }}
