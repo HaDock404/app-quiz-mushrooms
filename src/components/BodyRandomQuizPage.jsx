@@ -274,7 +274,7 @@ function BodyRandomQuizPage() {
                     </button>
                 </article>
             </article>
-            <Link to='/' className="quiz_page_button_home">
+            <Link to='/' className="quiz_page_button_home" tabindex="-1">
                 <HouseIcon />
                 Home
             </Link>
